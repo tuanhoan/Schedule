@@ -62,7 +62,7 @@ namespace Schedule
             IList<IList<Object>> values = response.Values;
             OneWeek Week = new OneWeek();
             var firstDayOfWeek = DateTime.Now.Date.AddDays(-1 * (int)(DateTime.Now.Date.DayOfWeek - 1) );
-             firstDayOfWeek =firstDayOfWeek.AddDays(-7);
+             firstDayOfWeek =firstDayOfWeek.AddDays(-7);//Muốn xem từ ngày nào thì chỉnh lại đây
             var lastDayOfWeek = firstDayOfWeek.AddDays(7);
             if (values != null)
             {
